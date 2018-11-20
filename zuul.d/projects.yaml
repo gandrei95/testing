@@ -1,0 +1,6 @@
+
+- project:
+    name: openstack-dev/ci-sandbox
+    check:
+      jobs:
+        - test-job

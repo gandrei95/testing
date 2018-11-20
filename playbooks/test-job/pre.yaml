@@ -1,0 +1,7 @@
+
+- hosts: localhost
+
+  tasks:
+    - name: create test-ci-job-pre file
+      shell: |
+        "echo test-job pre"

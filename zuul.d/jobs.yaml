@@ -1,0 +1,19 @@
+
+- job:
+    name: base-job
+    parent: null
+    description: |
+      Base Job used for testing CI
+    pre-run: playbooks/base-job/pre.yaml
+    post-run:
+      - playbooks/base-job/post.yaml
+
+- job:
+    name: test-job
+    parent: base-job
+    description: |
+      Test CI job inherited from base-job
+    pre-run: playbooks/test-ci-job/pre.yaml
+    run: playbooks/test-job/run.yaml
+    post-run:
+      - playbooks/test-job/post.yaml
