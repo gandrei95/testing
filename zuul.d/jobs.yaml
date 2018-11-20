@@ -13,7 +13,7 @@
     parent: base-job
     description: |
       Test CI job inherited from base-job
-    pre-run: playbooks/test-ci-job/pre.yaml
+    pre-run: playbooks/test-job/pre.yaml
     run: playbooks/test-job/run.yaml
     post-run:
       - playbooks/test-job/post.yaml
