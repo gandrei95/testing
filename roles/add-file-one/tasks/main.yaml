@@ -1,5 +1,0 @@
----
-- name: create file
-  shell: |
-    "echo base job pre"
-
