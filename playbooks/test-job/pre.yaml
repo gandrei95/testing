@@ -1,5 +1,5 @@
 
-- hosts: localhost
+- hosts: primary
 
   tasks:
     - name: create test-ci-job-pre file
