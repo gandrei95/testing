@@ -19,5 +19,5 @@
       - playbooks/test-job/post.yaml
     nodeset:
       nodes:
-        - name: test-job-server
+        - name: primary
           label: ubuntu1604
