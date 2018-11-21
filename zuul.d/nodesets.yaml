@@ -3,5 +3,3 @@
     nodes:
       - name: primary
         label: ubuntu1604
-    vars:
-      ansible_python_interpreter: "/usr/bin/python3"
