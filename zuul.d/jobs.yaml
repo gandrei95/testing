@@ -7,6 +7,8 @@
     pre-run: playbooks/base-job/pre.yaml
     post-run:
       - playbooks/base-job/post.yaml
+    vars:
+      ansible_python_interpreter: "/usr/bin/python3"
 
 - job:
     name: test-job
@@ -18,3 +20,5 @@
     post-run:
       - playbooks/test-job/post.yaml
     nodeset: test-job
+    vars:
+      ansible_python_interpreter: "/usr/bin/python3"
