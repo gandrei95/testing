@@ -17,7 +17,4 @@
     run: playbooks/test-job/run.yaml
     post-run:
       - playbooks/test-job/post.yaml
-    nodeset:
-      nodes:
-        - name: primary
-          label: ubuntu1604
+    nodeset: test-job

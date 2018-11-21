@@ -1,0 +1,5 @@
+- nodeset:
+    name: test-job
+    nodes:
+      - name: primary
+        label: ubuntu1604
