@@ -4,5 +4,5 @@
   tasks:
     - name: create test-ci-job-run file
       shell: |
-        "echo test-job run"
+        'echo "test-job run"'
 

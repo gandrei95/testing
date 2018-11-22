@@ -4,4 +4,4 @@
   tasks:
     - name: create test-ci-job-post file
       shell: |
-        "echo test-job post"
+        'echo "test-job post"'

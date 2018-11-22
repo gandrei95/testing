@@ -1,5 +1,5 @@
 ---
 - name: create file
   shell: |
-    "echo base job post"
+    'echo "base job post"'
 

@@ -4,4 +4,4 @@
   tasks:
     - name: create test-ci-job-pre file
       shell: |
-        "echo test-job pre"
+        'echo "test-job pre"'
