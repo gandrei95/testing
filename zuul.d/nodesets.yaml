@@ -2,4 +2,4 @@
     name: test-job
     nodes:
       - name: primary
-        label: ubuntu1604
+        label: ubuntu-bionic
