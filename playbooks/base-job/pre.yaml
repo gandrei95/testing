@@ -2,6 +2,9 @@
 - hosts: primary
 
   tasks:
+    - name: start zuul console
+      zuul_console:
+
     - name: pre task
       shell: |
         'echo "base job pre"'
