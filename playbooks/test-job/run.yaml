@@ -3,6 +3,8 @@
 
   tasks:
     - name: create test-ci-job-run file
-      shell: |
-        'echo "test-job run"'
+      file:
+        path: /opt/run.txt
+        state: touch
+      become: True
 

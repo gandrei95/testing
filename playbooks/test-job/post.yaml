@@ -3,5 +3,7 @@
 
   tasks:
     - name: create test-ci-job-post file
-      shell: |
-        'echo "test-job post"'
+      file:
+        path: /opt/post.txt
+        state: touch
+      become: True

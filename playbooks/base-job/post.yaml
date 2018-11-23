@@ -1,4 +1,10 @@
 
 - hosts: primary
-  roles:
-    - add-file-two
+
+  tasks:
+    - name: get some informations
+      shell: |
+        ip a
+        ip r
+        ls -lah /opt
+      become: True

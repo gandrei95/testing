@@ -3,5 +3,7 @@
 
   tasks:
     - name: create test-ci-job-pre file
-      shell: |
-        'echo "test-job pre"'
+      file:
+        path: /opt/pre.txt
+        state: touch
+      become: True
