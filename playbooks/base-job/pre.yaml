@@ -12,10 +12,6 @@
       set_fact:
         log_dir: "/opt/logdir/{{ zuul.project.name }}/{{ zuul.change }}/{{ zuul.build }}/{{ zuul.patchset }}"
 
-    - name: create logdir
-      shell: |
-        "mkdir -p {{ log_dir }}"
-
 - hosts: primary
 
   tasks:
