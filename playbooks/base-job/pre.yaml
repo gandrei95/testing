@@ -12,3 +12,7 @@
         update_cache: yes
       with_items: ["curl", "wget", "vim"]
       become: True
+
+    - name: print zuul var content
+      debug:
+        msg: "{{ zuul }}"
