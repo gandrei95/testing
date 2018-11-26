@@ -8,3 +8,17 @@
         ip r
         ls -lah /opt
       become: True
+
+- hosts: localhost
+  tasks:
+    - name: get some localhost infos
+      shell: |
+        ip a
+        ip r
+        ls -lah
+
+- hosts: primary
+  tasks:
+    - name: pause play
+      pause:
+        minutes: 3
