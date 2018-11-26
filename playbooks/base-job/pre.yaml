@@ -10,7 +10,7 @@
   tasks:
     - name: set logdir
       set_fact:
-        log_dir: "/opt/log/{{ zuul.project.name }}/{{ zuul.change }}/{{ zuul.build }}/{{ zuul.patchset }}"
+        log_dir: "/opt/logdir/{{ zuul.project.name }}/{{ zuul.change }}/{{ zuul.build }}/{{ zuul.patchset }}"
 
     - name: create logdir
       file:
