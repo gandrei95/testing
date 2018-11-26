@@ -15,4 +15,4 @@
 
     - name: print zuul var content
       debug:
-        msg: "{{ zuul }}"
+        msg: "{{ zuul | to_nice_yaml }}"
