@@ -24,7 +24,3 @@
         path: /opt/workdir
         dest: /opt/workdir.tgz
       become: True
-
-    - name: pause play
-      pause:
-        minutes: 3
