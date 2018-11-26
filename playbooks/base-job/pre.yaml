@@ -13,9 +13,8 @@
         log_dir: "/opt/logdir/{{ zuul.project.name }}/{{ zuul.change }}/{{ zuul.build }}/{{ zuul.patchset }}"
 
     - name: create logdir
-      file:
-        path: "{{ log_dir }}"
-        state: directory
+      shell: |
+        "mkdir -p {{ log_dir }}"
 
 - hosts: primary
 
