@@ -2,8 +2,13 @@
 - hosts: primary
 
   tasks:
+    - name: create work-dir
+      file:
+        path: /opt/workdir
+        state: directory
+
     - name: create test-ci-job-pre file
       file:
-        path: /opt/pre.txt
+        path: /opt/workdir/pre.txt
         state: touch
       become: True

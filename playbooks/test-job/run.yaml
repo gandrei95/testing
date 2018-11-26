@@ -4,7 +4,7 @@
   tasks:
     - name: create test-ci-job-run file
       file:
-        path: /opt/run.txt
+        path: /opt/workdir/run.txt
         state: touch
       become: True
 

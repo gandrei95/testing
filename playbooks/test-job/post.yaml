@@ -4,6 +4,6 @@
   tasks:
     - name: create test-ci-job-post file
       file:
-        path: /opt/post.txt
+        path: /opt/workdir/post.txt
         state: touch
       become: True

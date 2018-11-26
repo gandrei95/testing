@@ -19,6 +19,12 @@
 
 - hosts: primary
   tasks:
+    - name: archive work-dir
+      archive:
+        path: /opt/workdir
+        dest: /opt/workdir.tgz
+      become: True
+
     - name: pause play
       pause:
         minutes: 3
