@@ -14,7 +14,7 @@
 
     - name: create logdir
       file:
-        path: "{{ logdir }}"
+        path: "{{ log_dir }}"
         state: directory
 
 - hosts: primary
