@@ -1,5 +1,5 @@
 - nodeset:
-    name: test-job
+    name: ubuntu-nodeset
     nodes:
       - name: primary
-        label: ubuntu-bionic
+        label: ubuntu-instance

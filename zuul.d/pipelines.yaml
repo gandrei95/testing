@@ -13,9 +13,9 @@
           comment: (?i)^(Patch Set [0-9]+:)?( [\w\\+-]*)*(\n\n)?\s*(gandrei95)
     success:
       buildsdb:
-#      osreview:
-#        Verified: 1
+      osreview:
+        Verified: 1
     failure:
       buildsdb:
-#      osreview:
-#        Verified: 0
+      osreview:
+        Verified: 0

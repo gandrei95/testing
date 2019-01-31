@@ -19,6 +19,6 @@
     run: playbooks/test-job/run.yaml
     post-run:
       - playbooks/test-job/post.yaml
-    nodeset: test-job
+    nodeset: ubuntu-nodeset
     vars:
       ansible_python_interpreter: /usr/bin/python3
