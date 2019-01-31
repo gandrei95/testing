@@ -3,4 +3,4 @@
     name: openstack-dev/ci-sandbox
     check:
       jobs:
-        - noop
+        - test-job

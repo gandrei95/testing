@@ -2,4 +2,4 @@
     name: ubuntu-nodeset
     nodes:
       - name: primary
-        label: ubuntu-instance
+        label: ubuntu-bionic
